@@ -38,7 +38,7 @@ function Donut() {
     return (
       <ReactFusioncharts
         type="doughnut2d"
-        width="405"
+        width="100%"
         height="405"
         dataFormat="JSON"
         dataSource={dataSource}

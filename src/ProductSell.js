@@ -1,11 +1,12 @@
 import React from "react";
 import "./ProductSell.css";
+
 function ProductSell() {
   return (
-    <div style={{ padding: "50px" }}>
-      <div className="row" style={{ width: "100%" }}>
+    <div className="container mt-4">
+      <div className="row">
         <div className="table-container">
-          <table className="custom-table" style={{ width: "100%" }}>
+          <table className="table custom-table">
             <thead>
               <tr>
                 <th style={{ width: "55%" }}>Product name</th>
@@ -15,16 +16,21 @@ function ProductSell() {
               </tr>
             </thead>
             <tbody>
-              {/* Map over your data to generate table rows */}
               <tr>
                 <td>
-                  <div className="row">
-                    <div className="col" style={{width:'20%'}}>
-                        <img style={{width:'100%'}}  src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg" alt=""/>
+                  <div className="d-flex align-items-center">
+                    <div className="col-4 col-md-3">
+                      <img
+                        src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg"
+                        alt=""
+                        className="img-fluid"
+                      />
                     </div>
-                    <div className="col" style={{minWidth:'80%'}}>
+                    <div className="col-8 col-md-9">
                       <h5>Abstract 3D</h5>
-                      <span style={{fontSize:'12px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                      <span className="text-muted">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </span>
                     </div>
                   </div>
                 </td>
@@ -34,13 +40,19 @@ function ProductSell() {
               </tr>
               <tr>
                 <td>
-                <div className="row">
-                    <div className="col" style={{width:'20%'}}>
-                        <img style={{width:'100%'}} src="https://deep-image.ai/blog/content/images/2022/09/underwater-magic-world-8tyxt9yz.jpeg" alt=""/>
+                  <div className="d-flex align-items-center">
+                    <div className="col-4 col-md-3">
+                      <img
+                        src="https://deep-image.ai/blog/content/images/2022/09/underwater-magic-world-8tyxt9yz.jpeg"
+                        alt=""
+                        className="img-fluid"
+                      />
                     </div>
-                    <div className="col" style={{minWidth:'80%'}}>
+                    <div className="col-8 col-md-9">
                       <h5>Sarphens Illustration</h5>
-                      <span style={{fontSize:'12px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                      <span className="text-muted">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </span>
                     </div>
                   </div>
                 </td>
@@ -48,7 +60,6 @@ function ProductSell() {
                 <td>$25.00</td>
                 <td>$125.00</td>
               </tr>
-              {/* Add more rows as needed */}
             </tbody>
           </table>
         </div>
