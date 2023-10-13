@@ -22,52 +22,105 @@ ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 const categories = [
   {
     category: [
-      { label: "Current" },
-      { label: "1-30" },
-      { label: "31-60" },
-      { label: "61-90" },
-      { label: "91+" },
+      {
+        label: "Jan",
+      },
+      {
+        label: "Feb",
+      },
+      {
+        label: "Mar",
+      },
+      {
+        label: "Apr",
+      },
+      {
+        label: "May",
+      },
+      {
+        label: "Jun",
+      },
+      {
+        label: "Jul",
+      },
+      {
+        label: "Aug",
+      },
+      {
+        label: "Sep",
+      },
+      {
+        label: "Oct",
+      },
+      {
+        label: "Nov",
+      },
+      {
+        label: "Dec",
+      },
     ],
   },
 ];
 // STEP 3- Construct the dataset comprising multiple series
 const dataset = [
   {
-    seriesname: "Accounts Receivable",
+    // seriesname: "Accounts Receivable",
     data: [
-      { value: "2.45" },
-      { value: "2.02" },
-      { value: "1" },
-      { value: "0.75" },
-      { value: "0.25" },
+      {
+        value: "500",
+      },
+      {
+        value: "600",
+      },
+      {
+        value: "510",
+      },
+      {
+        value: "400",
+      },
+      {
+        value: "600",
+      },
+      {
+        value: "500",
+      },
+      {
+          value: "800",
+        },
+        {
+          value: "900",
+        },
+        {
+          value: "600",
+        },
+        {
+          value: "650",
+        },
+        {
+          value: "500",
+        },
+        {
+          value: "400",
+        },
     ],
   },
-  {
-    seriesname: "Accounts Payable",
-    data: [
-      { value: "1.1" },
-      { value: "0.11" },
-      { value: "0.09" },
-      { value: "0.07" },
-      { value: "0.04" },
 
-    ],
-  },
 ];
 
 // STEP 4 - Creating the JSON object to store the chart configurations
 const chartConfigs = {
   type: "mscolumn2d", // The chart type
-  width: "700", // Width of the chart
+  width: "1000", // Width of the chart
   height: "405", // Height of the chart
   dataFormat: "json", // Data type
   dataSource: {
     //Chart Configurations
     chart: {
       theme: "fusion",
-      caption: "Total Accounts Receivable and Payable Aging",
-      xAxisname: "Quarter",
-      yAxisName: "Revenues (In USD)",
+      caption: "Overview",
+      subCaption: "Monthly Eaarning",
+      // xAxisname: "Quarter",
+      // yAxisName: "Revenues (In USD)",
       numberSuffix: "M",
       plotFillAlpha: "80",
       divLineIsDashed: "1",
