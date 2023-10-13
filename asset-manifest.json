@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Fitpeo_FE/static/css/main.fdea7e42.css",
-    "main.js": "/Fitpeo_FE/static/js/main.ff7ebf2c.js",
+    "main.js": "/Fitpeo_FE/static/js/main.8db16560.js",
     "static/js/787.1382f4e7.chunk.js": "/Fitpeo_FE/static/js/787.1382f4e7.chunk.js",
     "index.html": "/Fitpeo_FE/index.html",
     "main.fdea7e42.css.map": "/Fitpeo_FE/static/css/main.fdea7e42.css.map",
-    "main.ff7ebf2c.js.map": "/Fitpeo_FE/static/js/main.ff7ebf2c.js.map",
+    "main.8db16560.js.map": "/Fitpeo_FE/static/js/main.8db16560.js.map",
     "787.1382f4e7.chunk.js.map": "/Fitpeo_FE/static/js/787.1382f4e7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fdea7e42.css",
-    "static/js/main.ff7ebf2c.js"
+    "static/js/main.8db16560.js"
   ]
 }
