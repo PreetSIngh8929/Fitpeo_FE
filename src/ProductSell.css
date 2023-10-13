@@ -1,0 +1,19 @@
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 16px;
+  }
+  
+  .custom-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .custom-table th, .custom-table td {
+    padding: 8px;
+    text-align: left;
+  }
+  .custom-table th {
+    border-bottom: 1px solid grey;
+  }

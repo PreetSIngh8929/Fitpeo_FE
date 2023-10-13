@@ -1,4 +1,5 @@
 import "./App.css";
+import ProductSell from "./ProductSell";
 // import Gaugecharts from "./gaugecharts.js";
 import Sidebar from "./Sidebar";
 import MultiSeries from "./multiserieschart";
@@ -10,7 +11,12 @@ function App() {
       <div className="row">
         <div
           className="col"
-          style={{ maxWidth: "15%", height: "950px", backgroundColor: "#002244",padding:'40px' }}
+          style={{
+            maxWidth: "15%",
+            height: "1250px",
+            backgroundColor: "#002244",
+            padding: "40px",
+          }}
         >
           <Sidebar />
         </div>
@@ -358,26 +364,36 @@ function App() {
             </div>
           </div>
           <div className="row">
-          <div className="col" style={{
-              width: "70%",
-              height: "20px",
-              marginBottom: "5px",
-              display: "flex",
-              float: "left",
-              padding:'50px',
-              borderRadius:'16px'
-            }}>
-        <MultiSeries  />
-      </div>
-      <div className="col" style={{
-              width: "30%",
-              padding:'50px',
-              borderRadius:'16px'
-            }}><Donut/></div>
-      </div>
+            <div
+              className="col"
+              style={{
+                width: "70%",
+                height: "20px",
+                marginBottom: "5px",
+                display: "flex",
+                float: "left",
+                padding: "50px",
+                borderRadius: "16px",
+              }}
+            >
+              <MultiSeries />
+            </div>
+            <div
+              className="col"
+              style={{
+                width: "30%",
+                padding: "50px",
+                borderRadius: "16px",
+              }}
+            >
+              <Donut />
+            </div>
+          </div>
+          <div className="row">
+          <ProductSell/>
+</div>
         </div>
       </div>
-    
     </div>
   );
 }
